@@ -1,0 +1,16 @@
+/* src/styles/App.css */
+
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+.instructions {
+  font-size: 16px;
+  margin: 15px 0;
+  color: #555;
+}
