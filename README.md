@@ -27,4 +27,4 @@ A responsive Weather App built using React that displays current weather conditi
 ## API Reference
 
 - **OpenWeatherMap API Documentation:**
-    For more details, refer to the OpenWeatherMap API documentation.
+    For more details, refer to the OpenWeatherMap API documentation : https://openweathermap.org/api
