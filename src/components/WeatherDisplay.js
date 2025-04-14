@@ -1,5 +1,3 @@
-// src/components/WeatherDisplay.js
-
 import React from 'react';
 import '../styles/WeatherDisplay.css';
 

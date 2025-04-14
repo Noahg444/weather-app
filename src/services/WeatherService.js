@@ -1,5 +1,3 @@
-// src/services/WeatherService.js
-
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 const MONTHLY_BASE_URL = "https://pro.openweathermap.org/data/2.5/forecast/climate";
@@ -50,7 +48,6 @@ export async function getWeatherDataByCity(city) {
  * @returns {Promise<object>} - The forecast data.
  */
 export async function getMonthlyForecastData(city) {
-  // The endpoint expects a query by city name.
   const url = `${MONTHLY_BASE_URL}?q=${encodeURIComponent(city)}&units=imperial&appid=${API_KEY}`;
   try {
     const response = await fetch(url);

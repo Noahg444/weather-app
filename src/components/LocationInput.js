@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/LocationInput.css'; // Ensure your styling file is in src/styles
+import '../styles/LocationInput.css';
 
 const LocationInput = ({ onSearch }) => {
   const [location, setLocation] = useState('');
@@ -7,9 +7,8 @@ const LocationInput = ({ onSearch }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (location.trim() !== '') {
-      // Invoke the callback function passed from App.js with the user's input
       onSearch(location);
-      setLocation(''); // Clear the input field after submission
+      setLocation('');
     }
   };
 

@@ -1,5 +1,3 @@
-// src/components/App.js
-
 import React, { useState, useEffect } from 'react';
 import WeatherDisplay from './WeatherDisplay';
 import LocationInput from './LocationInput';
@@ -20,7 +18,6 @@ function App() {
   const [loadingWeather, setLoadingWeather] = useState(false);
   const [loadingMonthly, setLoadingMonthly] = useState(false);
 
-  // Get user's location on mount.
   useEffect(() => {
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
@@ -40,7 +37,7 @@ function App() {
     }
   }, []);
 
-  // Fetch current weather based on coordinates.
+
   useEffect(() => {
     if (coords) {
       setLoadingWeather(true);
@@ -56,7 +53,6 @@ function App() {
     }
   }, [coords]);
 
-  // When weatherData updates and includes a city name, fetch the monthly forecast automatically.
   useEffect(() => {
     if (weatherData && weatherData.name) {
       setLoadingMonthly(true);
@@ -72,13 +68,11 @@ function App() {
     }
   }, [weatherData]);
 
-  // Handler for manual city search.
   const handleCitySearch = (city) => {
     setLoadingWeather(true);
     getWeatherDataByCity(city)
       .then((data) => {
         setWeatherData(data);
-        // Update coordinates based on the city search result.
         if (data.coord) {
           setCoords({ lat: data.coord.lat, lon: data.coord.lon });
         }
