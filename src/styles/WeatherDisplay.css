@@ -6,6 +6,7 @@
     margin: 20px auto;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
+    cursor: pointer;
   }
 
   .weather-display h3 {
@@ -16,6 +17,11 @@
   .weather-display h5 {
     margin: 5px 0;
     font-weight: normal;
+  }
+
+  .weather-display:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
   }
 
   #mainTemp {
