@@ -5,15 +5,42 @@
     max-width: 400px;
     margin: 20px auto;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: left;
+    text-align: center;
+  }
+
+  .weather-display h3 {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .weather-display h5 {
+    margin: 5px 0;
+    font-weight: normal;
+  }
+
+  #mainTemp {
+    font-size: 36px;
+    color: #333;
+    margin: 5px 0;
+  }
+
+  .weather-display img {
+    width: 100px;
+    height: auto;
   }
   
-  .weather-display h2 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
   
   .weather-display p {
     margin: 5px 0;
     font-size: 16px;
+  }
+
+  #HL {
+    color: #555;
+  }
+
+  .weather-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
   }

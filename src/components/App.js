@@ -86,11 +86,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Weather App</h1>
       <LocationInput onSearch={handleCitySearch} />
       <p className="instructions">
         Tip: Enter a city name (e.g., "New York") to search. Temperature is displayed in Fahrenheit.
       </p>
+      <p className="instructions"> Click upon any card to display more information. </p>
       {loadingLocation ? (
         <p>Loading location...</p>
       ) : error ? (
